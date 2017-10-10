@@ -338,5 +338,6 @@
                 <config.bndView>true</config.bndView>
             </properties>
         </profile>
+        <!-- profile 추가 예정 -->
     </profiles>
 </project>
