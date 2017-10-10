@@ -16,7 +16,7 @@ $(function () {
         submitHandler: function (form) {
             
             var ajaxData = {
-                url: '/she/bnd/board/save',
+                url: '/shem/bnd/board/save',
                 type: 'post',
                 data: $(form).serialize() ,
                 success: function (data) {

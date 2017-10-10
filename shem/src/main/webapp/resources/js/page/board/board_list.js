@@ -2,5 +2,5 @@ $(function(){
 });
 
 function boardDetail(boardId){
-    location.href='/she/bnd/board/detail/'+boardId;
+    location.href='/shem/bnd/board/detail/'+boardId;
 }
