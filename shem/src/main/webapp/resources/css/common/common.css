@@ -1,0 +1,456 @@
+/*
+ 공용 CSS
+*/
+html {
+    height : 100%;
+}
+
+body {
+    height : 100%;
+    padding-top: 99px;
+    font-size : 13px !important;
+}
+
+#main-container {
+    height : 90%;
+    display : table;
+}
+
+#content {
+    height : 100%;
+    display : table-cell;   
+    float : none;
+}
+
+.container {
+    width : 1280px !important;
+}
+
+
+textarea {
+    resize: none;
+}
+
+/*
+1 Frame Layout 알림 화면
+*/
+.single-layout-alarm {
+    text-align : center;
+    top : 10%;
+    margin-top : 10%;
+}
+
+/*
+Login View
+*/
+.login-wrapper {
+    position : relative;
+    top : 25%;
+}
+
+
+/*
+    Top bar
+*/
+.navbar-inner{
+    background-color : #0D95E3;
+}
+
+.navbar-inverse {
+    background-color : #0D95E3;
+    border-color : #0D95E3;
+}
+/*
+Navigation Top Menu
+*/
+div#main-menu-nav.row {
+    background-color : #0D95E3;
+    color : #CCCCCB;
+}
+a.nav.nav-top{
+    color:white;
+    padding-left : 50px;
+    padding-right : 50px;
+}
+a.nav.nav-top:hover, a.nav.nav-top:focus{
+    background-color:#585959;
+}
+.dropdown-menu.nav-top {
+    background-color: #585959;
+    color : #FFF;
+}
+
+.dropdown-menu.nav-top a {
+    background-color: #585959;
+    color : #FFF;
+    font-size : 11px;
+}
+
+.dropdown-menu.nav-top a:hover {
+    background-color: #FD675D;
+    color:#FFF;
+}
+
+li:hover .dropdown-menu{
+    display:block;
+    margin : 0px;
+}
+
+
+/*
+Sidebar Menu
+*/
+#sidebar {
+    height : 100%;
+    display : table-cell;
+    float : none;
+    background-color: #0D95E3;
+}
+
+.side-menu-list {
+    position: fixed;
+    width: 175px;
+}
+
+.side-menu-list a:hover {
+    color:black;
+    font-weight: bold;
+    background-color: aqua !important;
+}
+
+.side-menu.active {
+    color:#343434;
+    background-color:#D6D5D1;
+    font-weight: bold;
+}
+
+.side-menu {
+    background-color: #585959;
+    height : 100%;
+    padding: 15px 15px !important;
+    color: white;
+    font-size: smaller;
+}
+
+
+
+/*
+Button Styles
+*/
+
+.btn-login {
+    background-color: #B81900;
+    color : white;
+}
+.btn-login:hover {
+    background-color: #820615;
+    color : white;
+}
+
+.btn.file-load {
+    margin : 0px 1px;
+}
+
+.btn.file-clear {
+    margin : 0px 1px;
+}
+
+.btn-in-panel {
+    float: right;
+}
+
+.search-buttons {
+    padding: 10px 0px;
+    text-align : center;
+}
+.search-buttons .btn {
+    min-width : 200px;
+    width : auto;
+}
+
+.action-buttons {
+    padding : 10px 0px;
+    text-align : center;
+}
+
+.action-buttons .btn{
+    min-width : 100px;
+    width : auto;
+}
+
+/*
+Panel
+*/
+.panel-heading.panel-heading-custom1 {
+    color:#343434;
+    background-color:#D6D5D1;
+    font-weight: bold;
+}
+.panel-body.edit-fields {
+    padding : 0px;
+}
+
+.row.input-field {
+    padding : 1px 0px;
+}
+
+.manual-value-field {
+    text-align : center;
+    font-size: medium;
+}
+
+/*
+조회 조건 필드
+*/
+.search-condition {
+    margin : 1px 0px;
+}
+
+/*
+Label
+*/
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: #BAE4F5;
+}
+li > label {
+    line-height : 29px;
+}
+
+.label-wrapper {
+    overflow : hidden;
+    background-color : #EFEEE9;
+    height : 100%;
+    border-radius: 5px;
+}
+
+.label-wrapper > label {
+    line-height : 34px;
+    margin-bottom: 0px;
+    font-size : 12px;
+    font-weight: normal;
+}
+
+.label-wrapper-hori {
+    line-height: 34px;
+    height: 34px;
+    text-align: center;
+    background-color: #F3F0E3;
+    border-radius: 5px;
+}
+
+textarea {
+    width : 100%;
+    height : 100%;
+}
+
+.column-wrapper {
+    display : table;
+    table-layout : fixed;
+    width : 100%;
+    height : 100%;
+}
+
+.column-wrapper2 {
+    display: table;
+    table-layout: fixed;
+    /* width: 100%; */
+    height: 100%;
+}
+
+.column-side-wrapper {
+    height : 100%;
+    display : table-cell;
+    float : none;
+    vertical-align: middle;
+}
+
+.column-side-wrapper-no-middle {
+    height : 100%;
+    display : table-cell;
+    float : none;
+}
+
+.row-full-height {
+    height : 100%;
+}
+.full-height {
+    height : 100%;
+}
+
+
+/*
+Image Preview
+*/
+.image-panel {
+    text-align : center;
+    min-height: 150px;
+}
+.image-preview {
+    width : 90%;
+    height : 75%;
+    margin : 1% 5%;
+}
+.image-preview > img {
+    width : 100%;
+    height : 100%;
+}
+.file-input {
+    display : none !important;
+}
+.dynamic-wrapper {
+    padding: 5px 0px;
+    border-style: double;
+    border-width: medium;
+    border-color: gainsboro;
+}
+
+/*
+Landing Page
+*/
+
+#paging {
+    text-align: center;
+}
+
+
+.landing-page-info {
+    display:inline;
+    margin : 0px 50px;
+}
+
+.formation-display {
+    margin: 5% 0%;
+    padding: 10px 10px;
+    color : red;
+}
+
+.landing {
+    padding: 0px;
+}
+
+.entity-img-alpha {
+    background-image: url("http://placehold.it/200x100/000000/FFFFFF?text=A");
+}
+
+.entity-img-bravo {
+    background-image: url("http://placehold.it/200x100/000000/FFFFFF?text=B");
+}
+
+.entity-img-charlie {
+    background-image: url("http://placehold.it/200x100/000000/FFFFFF?text=C");
+}
+
+.entity-img-delta {
+    background-image: url("http://placehold.it/200x100/000000/FFFFFF?text=D");
+}
+
+.entity-img-echo {
+    background-image: url("http://placehold.it/200x100/000000/FFFFFF?text=E");
+}
+
+.entity-img-foxtrot {
+    background-image: url("http://placehold.it/200x100/000000/FFFFFF?text=F");
+}
+
+.entity-img-golf {
+    background-image: url("http://placehold.it/200x100/000000/FFFFFF?text=G");
+}
+
+.entity-img-hotel {
+    background-image: url("http://placehold.it/200x100/000000/FFFFFF?text=H");
+}
+
+.entity-img-india {
+    background-image: url("http://placehold.it/200x100/000000/FFFFFF?text=I");
+}
+
+.entity-img-juliet {
+    background-image: url("http://placehold.it/200x100/000000/FFFFFF?text=J");
+}
+
+.entity-table {
+    font-size: 12px;
+}
+
+.entity-img {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.entity-img-normal {
+    height: 100px;
+    background-color: #cccccc;
+    padding: 1px;
+}
+
+.entity-img-big {
+    height: 200px;
+    padding: 1px;
+}
+
+.landing img {
+    width: 100%;
+    height: 100%;
+    opacity : 0.5;
+}
+
+table {
+    overflow: hidden;
+    width: 100%;
+}
+
+/*
+Footer
+*/
+
+.footer {
+    background-color: #0D95E3;
+    color: white;
+    height : 30px;
+    line-height : 30px;
+}
+
+.footer .footer-image {
+    float : right;
+    margin : 1%;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.mgr10 {
+    margin-right: 10px;
+}
+
+.mgr15 {
+    margin-right: 15px;
+}
+
+#loading {
+    height: 100%;
+    left: 0px;
+    position: fixed;
+    _position:absolute; 
+    top: 0px;
+    width: 100%;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    opacity : 0.5;
+}
+
+.loading {
+    /*background-color: white;*/
+    z-index: 199;
+}
+
+#loading_img{
+    position:absolute; 
+    top:50%;
+    left:50%;
+    height:35px;
+    margin-top:-75px;	
+    margin-left:-75px;
+    z-index: 200;
+}

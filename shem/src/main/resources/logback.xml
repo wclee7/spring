@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="true">
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>%d{yy.MM.dd HH:mm:ss.SSS} [%thread{0}] [%logger{0}.%method{0} :%-4.4line] [%-5level] %msg%n</Pattern>
+        </encoder>
+    </appender>
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.defaultFilePath}</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>%d{yy.MM.dd HH:mm:ss.SS} [%.30thread{30}] [%30.30logger{0}.%-35.35method{35} :%-4.4line] [%-5level] %msg%n</Pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${log.dailyFilePath}</FileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+    
+    <logger name="org.springframework" level="info"/>
+    <logger name="org.hibernate"  additivity="false" level="info"/>
+    <logger name="org.jooq.Constants" level="warn"/>
+    <logger name="springfox.documentation" level="info"/>
+    <logger name="org.apache.http.impl" level="info"/>
+
+    <root level="${log.level}">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+
+    <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" />
+</configuration>
