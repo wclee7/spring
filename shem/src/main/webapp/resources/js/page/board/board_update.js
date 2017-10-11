@@ -22,7 +22,7 @@ $(function () {
                 success: function (data) {
                     alert(data.message);
                     if (data.code === "N200")
-                        location.href = "/she/bnd/board/list";
+                        location.href = "/shem/bnd/board/list";
                 }
             };
             sendAjax(ajaxData);

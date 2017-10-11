@@ -1,7 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<script src="/she/resources/js/page/board/board_list.js" ></script>
+<script src="/shem/resources/js/page/board/board_list.js" ></script>
 <div class="row input-field row-full-height">
     <div class="col-xs-2 label-wrapper" style="height : 105px;">
         <label>게시판 리스트</label>
@@ -26,7 +26,7 @@
         </table>
         <!--<table class="table entity-function col-xs-12">-->
         <div class="search-buttons">
-            <input type="button" width="100px;" class="form-control" value="게시물 작성" onclick="location.href = '/she/bnd/board/save'"/>
+            <input type="button" width="100px;" class="form-control" value="게시물 작성" onclick="location.href = '/shem/bnd/board/save'"/>
         </div>
         <script>
                                                     console.log("${boardList}");

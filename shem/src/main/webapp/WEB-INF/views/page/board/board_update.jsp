@@ -1,7 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<script src="/she/resources/js/board/board_update.js" ></script>
-<script src="/she/resources/js/common/ajax.js" ></script>
+<script src="/shem/resources/js/board/board_update.js" ></script>
+<script src="/shem/resources/js/common/ajax.js" ></script>
 <form id="nUpdateForm">
     <br/><br/>
     <div class="page-header">
@@ -17,6 +17,6 @@
     </div>
     <div class="bottom">
         <input type="submit" value="수정" id="updateBtn"/>
-        <input type="button" value="취소" onclick="location.href = '/she/bnd/board/list'"/>
+        <input type="button" value="취소" onclick="location.href = '/shem/bnd/board/list'"/>
     </div>
 </form>

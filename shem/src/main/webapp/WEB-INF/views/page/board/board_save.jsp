@@ -1,7 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<script src="/she/resources/js/page/board/board_save.js" ></script>
-<script src="/she/resources/js/common/ajax.js" ></script>
+<script src="/shem/resources/js/page/board/board_save.js" ></script>
+<script src="/shem/resources/js/common/ajax.js" ></script>
 
 <form id="nSaveForm" method="post">
     <br/><br/>
@@ -16,6 +16,6 @@
     </div>
     <div class="bottom">
         <input type="submit" value="저장" id="saveBtn" />
-        <input type="button" value="취소" id="cancelBtn" onclick="location.href = '/she/bnd/board/list'"/>
+        <input type="button" value="취소" id="cancelBtn" onclick="location.href = '/shem/bnd/board/list'"/>
     </div>
 </form>

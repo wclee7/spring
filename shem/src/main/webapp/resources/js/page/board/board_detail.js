@@ -6,7 +6,7 @@ $(function () {
         };
         
         var ajaxData = {
-            url: '/she/bnd/board/delete',
+            url: '/shem/bnd/board/delete',
             type: 'post',
             data: $.param(data),
             success: function (data) {
