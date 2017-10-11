@@ -3,11 +3,10 @@
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@taglib uri="http://www.springframework.org/security/tags" prefix="sec" %>
 <sec:authorize access="isAnonymous()">
-
     <div class="wrapper login-wrapper">
         <div class="col-xs-6 col-xs-offset-3 login-header">
-            <img src ="${pageContext.request.contextPath}/resources/images/login-title.png">
-            <!--    <h1>로그인 <small>Back Office Login</small></h1>-->
+<!--            <img src ="${pageContext.request.contextPath}/resources/images/login-title.png">-->
+            <h1>로그인 <small>Bnd Login</small></h1>
         </div>
         <!-- col-xs-6 col-xs-offset-3 -->
         <div class="col-xs-6 col-xs-offset-3 login-input-pannel">
@@ -17,7 +16,6 @@
                         <span class="input-group-addon glyphicon glyphicon-user"> </span>
                         <input type="text" name="account" class="form-control" placeholder="아이디">
                     </div>
-
                     <div class="input-group input-group-lg">
                         <span class="input-group-addon glyphicon glyphicon-lock"> </span>
                         <input type="password" name="password" class="form-control" placeholder="비밀번호">
