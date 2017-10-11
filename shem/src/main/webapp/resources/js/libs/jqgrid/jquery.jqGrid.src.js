@@ -8279,7 +8279,7 @@
           if (p.tmplNames && p.tmplNames.length) {
             found = true;
             tmpl = p.tmplLabel;
-            tmpl += "<select class='ui-cptv'>";
+            tmpl += "<select class='ui-bnd'>";
             tmpl += "<option value='default'>Default</option>";
             $.each(p.tmplNames, function (i, n) {
               tmpl += "<option value='" + i + "'>" + n + "</option>";
@@ -8315,7 +8315,7 @@
           });
           fil.append(bt);
           if (found && p.tmplFilters && p.tmplFilters.length) {
-            $(".ui-cptv", fil).bind('change', function () {
+            $(".ui-bnd", fil).bind('change', function () {
               var curtempl = $(this).val();
               if (curtempl === "default") {
                 $("#" + fid).jqFilter('addFilter', defaultFilters);
@@ -8438,7 +8438,7 @@
             }
             fl[0].resetFilter();
             if (found) {
-              $(".ui-cptv", fil).val("default");
+              $(".ui-bnd", fil).val("default");
             }
             $.extend($t.p.postData, sdata);
             mustReload = $($t).triggerHandler("jqGridFilterReset");

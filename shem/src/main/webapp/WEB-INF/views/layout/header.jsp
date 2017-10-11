@@ -8,8 +8,7 @@
             <div class="row">
 
                 <div class="col-xs-4" id="site-logo-row">
-                    <!-- 250x60 -->
-                    <%-- <a href="${pageContext.request.contextPath}/bnd"><img id="site-logo" src="${pageContext.request.contextPath}/resources/images/${applicationScope.cptv_bi}" style="margin-top:10px"/></a> --%>
+                    <!-- 250x60 -->                    
                 </div>
 
                 <div class="col-xs1 col-xs-offset-10">

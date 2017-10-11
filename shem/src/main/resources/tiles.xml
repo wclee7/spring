@@ -6,7 +6,7 @@
     <!-- js, css, jsp 가 같은 골격(구조)로 위치함을 명심 -->
     <!-- 2프레임 규정 : 2frame.jsp -->
     <definition name="2frame" template="/WEB-INF/views/layout/2frame.jsp">
-        <put-attribute name="title"       value="C-PTV Management System" type="string" />
+        <put-attribute name="title"       value="bnd system" type="string" />
         <put-attribute name="head-tag"    value="/WEB-INF/views/layout/head-tag.jsp" />
         <put-attribute name="header"      value="/WEB-INF/views/layout/header.jsp" />
         <put-attribute name="footer"      value="/WEB-INF/views/layout/footer.jsp" />
