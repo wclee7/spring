@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="2frame" template="/WEB-INF/views/layout/2frame.jsp">
+        <put-attribute name="title"       value="C-PTV Management System" type="string" />
+        <put-attribute name="head-tag"    value="/WEB-INF/views/layout/head-tag.jsp" />
+        <put-attribute name="header"      value="/WEB-INF/views/layout/header.jsp" />
+        <put-attribute name="footer"      value="/WEB-INF/views/layout/footer.jsp" />
+    </definition>
+
+    <definition name="*/*" extends="2frame">
+        <put-attribute name="contentJs"   value="/resources/js/page/{1}/{2}.js" type="string" />
+        <put-attribute name="contentCss"  value="/resources/css/page/{1}/{2}.css" type="string" />
+        <put-attribute name="contentJsp" value="/WEB-INF/views/page/{1}/{2}.jsp"  />
+    </definition>
+
+
+    <definition name="1frame" template="/WEB-INF/views/layout/1frame.jsp">
+        <put-attribute name="title"       value="BND" type="string" />
+        <put-attribute name="head-tag"    value="/WEB-INF/views/layout/head-tag.jsp" />
+        <put-attribute name="header"      value="/WEB-INF/views/layout/header.jsp" />
+        <put-attribute name="footer"      value="/WEB-INF/views/layout/footer.jsp" />
+    </definition>
+
+    <definition name="*" extends="1frame">
+        <put-attribute name="contentJs"   value="/resources/js/page/{1}.js" type="string" />
+        <put-attribute name="contentCss"  value="/resources/css/page/{1}.css" type="string" />
+        <put-attribute name="contentJsp" value="/WEB-INF/views/page/{1}.jsp"  />
+    </definition>
+  
+    <definition name="popup" template="/WEB-INF/views/layout/popup.jsp">
+        <put-attribute name="title"       value="Popup"                 type="string" />
+        <put-attribute name="head-tag"    value="/WEB-INF/views/layout/head-tag.jsp" />
+    </definition>
+    
+    <definition name="*/*/popup" extends="popup">
+        <put-attribute name="contentJs"   value="/resources/js/page/{1}/{2}.js" type="string" />
+        <put-attribute name="contentCss"  value="/resources/css/page/{1}/{2}.css" type="string" />
+        <put-attribute name="contentJsp" value="/WEB-INF/views/page/{1}/{2}.jsp"  />
+    </definition>
+  
+</tiles-definitions>

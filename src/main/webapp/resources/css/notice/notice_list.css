@@ -1,0 +1,32 @@
+.container{
+    width: 65%;
+    height: 700px;
+    margin: auto ;
+}
+.header {
+    height: 20%;
+    text-align: center;
+}
+.middle{
+    height: 60%;
+    text-align: center;
+}
+.bottom{
+    height: 20%;
+    text-align: right;
+}
+
+.notice_list{
+    height: 100%;
+    overflow: auto;
+
+}
+.n_number {
+    width: 5%;
+}
+.n_title {
+    width: 50%;
+}
+.n_regDate {
+    width: 20%;
+}

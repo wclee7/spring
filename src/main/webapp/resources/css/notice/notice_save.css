@@ -1,0 +1,29 @@
+.container{
+    width: 50%;
+    height: 700px;
+    margin: auto ;
+}
+#nSaveForm {
+    height: 100%;
+}
+.header {
+    height: 20%;
+    text-align: center;
+}
+.middle{
+    height: 60%;
+    text-align: center;
+}
+.bottom{
+    height: 20%;
+    text-align: right;
+}
+
+.edit_div {
+    height: 100%;
+    text-align: center;
+}
+.edit_div input {
+    margin-bottom: 10px;
+    width: 100%;
+}
