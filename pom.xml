@@ -14,7 +14,7 @@
         <springsecurity.version>4.0.1.RELEASE</springsecurity.version>
         <dependency.version.slf4j>1.7.21</dependency.version.slf4j>
         <dependency.version.logback>1.1.7</dependency.version.logback>
-        <dependency.version.jackson>2.8.5</dependency.version.jackson>
+        <dependency.version.jackson>2.11.2</dependency.version.jackson>
         <mysql.version>5.1.31</mysql.version>
         <dependency.version.tiles>3.0.5</dependency.version.tiles>
         <dependency.version.spring-security>4.2.0.RELEASE</dependency.version.spring-security>
