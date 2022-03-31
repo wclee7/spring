@@ -10,7 +10,7 @@
     <properties>        
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <dependency.version.commons-lang>3.4</dependency.version.commons-lang>
-        <springframework.version>4.3.4.RELEASE</springframework.version>
+        <springframework.version>5.3.18</springframework.version>
         <springsecurity.version>4.0.1.RELEASE</springsecurity.version>
         <dependency.version.slf4j>1.7.21</dependency.version.slf4j>
         <dependency.version.logback>1.1.7</dependency.version.logback>
